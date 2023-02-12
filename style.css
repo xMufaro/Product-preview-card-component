@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+:root {
+  --uniqueColor: hsl(158, 36%, 37%);
+  --background-color: hsl(30, 38%, 92%);
+  --heading-text-color: hsl(212, 21%, 14%);
+  --text-color: hsl(228, 12%, 48%);
+  --box-background-color: hsl(0, 0%, 100%);
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+* {
+  font-weight: 500;
+  margin: 0;
+}
+
+p {
+  font-size: 14px;
+  color: var(--text-color);
+}
+
+h1 {
+  font-family: 'Fraunces', serif;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  background-color: var(--box-background-color);
+  border-radius: 0.75rem;
+  height: 450px;
+  max-width: 600px
+}
+
+.image>img,.content {
+  max-width: 300px;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem 2rem;
+  gap: 1.4rem;
+  width: 300px;
+}
+
+.image>img {
+  border-radius: 0.75rem 0 0 0.75rem;
+  object-fit: cover;
+}
+
+.productType {
+  text-transform: uppercase;
+  color: var(--text-color);
+  font-size: 12px;
+  letter-spacing: 5px;
+}
+
+.productName {
+  color: var(--heading-text-color);
+  font-size: 2rem;
+  line-height: 1;
+}
+
+.productDescription {
+  color: var(--text-color);
+  line-height: 1.65;
+  font-weight: 500;
+}
+
+.price {
+  color: var(--uniqueColor);
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  font-size: 1.7rem;
+  line-height: 1;
+  margin-top: 6px;
+  font-family: "Fraunces", serif;
+}
+.discount {
+  color: var(--text-color);
+  text-decoration:line-through;
+  font-size: 0.7rem !important;
+  text-decoration-color: var(--text-color);
+  -moz-text-decoration-color: var(--text-color);
+  line-height: 1;
+  font-family: "Montserrat", sans-serif;
+}
+
+.addToCart {
+  background-color: var(--uniqueColor);
+  color: var(--box-background-color);
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  border-radius: 0.5rem;
+  padding: 0.95rem 0rem;
+  font-size: 0.9rem;
+  margin-top: 8px;
+  font-weight: 700;
+  cursor: pointer;
+}
